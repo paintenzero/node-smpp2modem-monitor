@@ -17,11 +17,11 @@ messageObservable.filter(function (msg) {
     var row = $('<div class="row" id="' + msg.imsi + '">'+
     '<div class="col-md-2 host">' + msg.host + ':' + msg.port + '</div>'+
     '<div class="col-md-2 imsi"></div>'+
-    '<div class="col-md-2 signal"></div>'+
+    '<div class="col-md-1 signal"></div>'+
     '<div class="col-md-1 queue"></div>'+
     '<div class="col-md-2 stattime"></div>'+
-    '<div class="col-md-1 sent"></div>'+
-    '<div class="col-md-1 rejected"></div>'+
+    '<div class="col-md-2 sent"></div>'+
+    '<div class="col-md-2 rejected"></div>'+
     '</div>');
     $('#info').append(row);
     setRowValues(row, msg);
